@@ -1,0 +1,80 @@
+.title,
+.subheading {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subheading {
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #921a40;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.human-choices,
+.comp-choices {
+  display: flex;
+  gap: 3rem;
+  border: solid white 5px;
+  border-radius: 25px;
+  padding: 40px;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.human-score,
+.comp-score {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#numOfRounds {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.choices-div {
+  display: flex;
+  font-weight: 300;
+  margin-bottom: 15px;
+  gap: 13rem;
+}
+
+.winner-div {
+  display: flex;
+  margin: auto;
+  border: 1px white solid;
+  border-radius: 10px;
+  width: max-content;
+  padding: 10px;
+}
+
+.h-choices {
+  margin-left: 430px;
+}
+
+.c-choices {
+  margin-left: auto;
+  margin-right: 430px;
+}
