@@ -64,7 +64,7 @@ function playGame() {
     winner.className = "winner-div";
 
     document.body.appendChild(winner);
-    restartGameMessage = "Pick an option to restart the game :)";
+    restartGameMessage = "Pick an option to play again :)";
 
     if (humanScore > computerScore) {
       winner.textContent =
