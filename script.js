@@ -32,28 +32,6 @@ function playGame() {
   let gameFinished = false;
   let winner;
 
-  // Create score divs and update scores
-  const humanScoreDiv = document.createElement("div");
-  humanScoreDiv.className = "human-score";
-  humanScoreDiv.textContent = "Human: 0";
-  document.body.insertBefore(
-    humanScoreDiv,
-    document.querySelector(".human-choices")
-  );
-
-  const computerScoreDiv = document.createElement("div");
-  computerScoreDiv.className = "comp-score";
-  computerScoreDiv.textContent = "Computer: 0";
-  document.body.insertBefore(
-    computerScoreDiv,
-    document.querySelector(".comp-choices")
-  );
-
-  function updateScores() {
-    humanScoreDiv.textContent = `Human: ${humanScore}`;
-    computerScoreDiv.textContent = `Computer: ${computerScore}`;
-  }
-
   // Game logic - show final scores too at the end and reset when an option is picked
 
   function playRound(humanChoice, computerChoice) {
@@ -73,12 +51,10 @@ function playGame() {
 
     roundsPlayed++;
 
-    if (roundsPlayed === 3) {
+    if (roundsPlayed === 1) {
       getWinner();
       gameFinished = true;
     }
-
-    updateScores();
   }
 
   // Winner conditionals
